@@ -1,16 +1,19 @@
 {
   "name": "arquitetura",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Inven!RA",
+  "main": "app.js",
+  "repository": "",
+  "author": "Yolanda",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "build": "babel scr -d lib",
-    "test": "jest"
+    "start": "node app.js"
   },
- "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "server": "^1.0.38"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
 }
