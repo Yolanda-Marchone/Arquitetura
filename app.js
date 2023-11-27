@@ -22,8 +22,9 @@ const html = `
 </br>
 </br>
 </br>
-    Análise das plantas em ambientes extremamente secos
-
+    <h1>Análise das plantas em ambientes extremamente secos</h1>
+</br>
+</br>
     Por favor introduza os dados da planta
     <form action="processar_formulario.php" method="POST" enctype="multipart/form-data">
     <label for="nome">Nome da planta:</label>
@@ -33,14 +34,13 @@ const html = `
     <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
 
   
-    <label for="perguntas">Perguntas sobre o estado da planta</label>
+    <label for="perguntas">Perguntas sobre o estado da planta:</label>
     
-       <label for="perguntas1">Pergunta 1:</label>
-    <input type="text" id="pergunta1" name="pergunta1" required><br><br>
+    <label for="perguntas1">Pergunta 1:</label>
     <label for="perguntas2">Pergunta 2:</label>
-    <input type="text" id="pergunta1" name="pergunta2" required><br><br>
     <label for="perguntas3">Pergunta 3:</label>
-    <input type="text" id="pergunta1" name="pergunta3" required><br><br>
+    <label for="perguntas4">Pergunta 4:</label>
+
     
   </form> 
 
