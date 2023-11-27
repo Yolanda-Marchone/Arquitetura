@@ -19,6 +19,18 @@ const html = `
     <section>
       Testando minha URL para o Inven!RA!
     </section>
+    <form action="processar_formulario.php" method="POST" enctype="multipart/form-data">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+    
+    <label for="perguntas">Pergunta 1:</label>
+    <input type="text" id="pergunta1" name="pergunta1" required><br><br>
+  </form> 
+
+    
   </body>
 </html>
 `
