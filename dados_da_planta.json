@@ -1,4 +1,6 @@
-Plantas[{ "id": 1,
+Plantas[
+    
+    { "id": 1,
     "nome": "Bambu",
     "foto": "Aqui esta a foto da planta",
     "pergunta_id": 1 ,
