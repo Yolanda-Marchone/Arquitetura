@@ -1,0 +1,17 @@
+{ "id": 1,
+    "nome": "Bambu",
+    "foto": "Aqui esta a foto da planta",
+    "pergunta_id": 1 ,
+}
+
+{ "id": 2,
+    "nome": "Ficus",
+    "foto": "Aqui esta a foto da planta",
+    "pergunta_id": 3 ,
+}
+
+{ "id": 2,
+    "nome": "Tomateiro",
+    "foto": "Aqui esta a foto da planta",
+    "pergunta_id": 4 ,
+}
