@@ -4,6 +4,8 @@ const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
+GET http://arquitetura-url.onrender.com/planta/1
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
