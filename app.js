@@ -4,8 +4,7 @@ const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
-app.get('/plantas',function(req,res){
-    res.render("dados_da_planta/Plantas");
+app.get("/plantas", (req, res) => res.type('html').send(html));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
