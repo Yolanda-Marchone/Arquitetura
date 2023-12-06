@@ -1,8 +1,22 @@
+
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => res.type('html').send(html));
+
+const fs = require('fs');
+const jsonData = fs.readFileSync("./dados_da_planta.json", "utf8");
+
+app.get('/dados_da_planta', (req, res) => {
+  res.json(jsonData);
+});
+
+app.post("/plantas", (req, res) => {
+
+  res.send(`Dados da planta recebido`);
+});
+
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
@@ -27,7 +41,7 @@ const html = `
 </br>
     Por favor introduza os dados da planta
     </br>
-    <form action="processar_formulario.php" method="POST" enctype="multipart/form-data">
+    <form action="/plantas" method="POST" enctype="multipart/form-data">
     <label for="nome">Nome da planta:</label>
     <input type="text" id="nome" name="nome" required><br><br>
     
@@ -35,17 +49,26 @@ const html = `
     <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
 
   
+   
     <label for="perguntas">Perguntas sobre o estado da planta:</label></br>
-    
-    <label for="perguntas1">Pergunta 1:</label></br>
-    <label for="perguntas2">Pergunta 2:</label></br>
-    <label for="perguntas3">Pergunta 3:</label></br>
-    <label for="perguntas4">Pergunta 4:</label>
+    <select name="perguntas" id="perguntas">
+   <optgroup label="Escolha a pergunta">
+    <option value="Pergunta 1">Pergunta 1</option>
+    <option value="Pergunta 2">Pergunta 2</option>
+    <option value="Pergunta 3">Pergunta 3</option>
+    <option value="Pergunta 4">Pergunta 4</option>
+  </optgroup>
+ 
+</select>
+  
+
+</br>
+</br>
+    <button name="button">Enviar</button>
+
 
     
   </form> 
-
-    
   </body>
-</html>
-`
+  </html>
+  `
