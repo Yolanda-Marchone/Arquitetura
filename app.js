@@ -12,6 +12,10 @@ app.get('/dados_da_planta', (req, res) => {
   res.json(jsonData);
 });
 
+app.get('/resultado_da_analise', (req, res) => {
+    res.send(`Aqui está o resultado da análise`);
+});
+
 app.post("/plantas", (req, res) => {
 
   res.send(`Dados da planta recebido`);
